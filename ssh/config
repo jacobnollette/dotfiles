@@ -1,0 +1,4 @@
+host shortcut
+  user jnollette
+  hostname bossmachine.local
+  #port 3333
