@@ -1,0 +1,9 @@
+[core]
+	editor = vim
+[color]
+	ui = true
+[user]
+	name = Jacob Nollette
+	email = jacob@jacobnollette.com
+[push]
+	default = simple
