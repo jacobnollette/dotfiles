@@ -27,7 +27,7 @@ set smartindent	" Enable smart-indent
 set tabstop=2
 set copyindent
 set shiftwidth=2
-set expandtab
+""set expandtab
 set clipboard=unnamed
 
 
