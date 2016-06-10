@@ -3,7 +3,7 @@
 [color]
 	ui = true
 [user]
-	name = Jacob Nollette
-	email = jacob@jacobnollette.com
+	name = Some name
+	email = user@domain.net
 [push]
 	default = simple
