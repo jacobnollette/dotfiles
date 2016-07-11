@@ -1,3 +1,7 @@
 .AppleDouble
+<<<<<<< HEAD
 www/latest.zip
 www/wordpress
+=======
+.DS_Store
+>>>>>>> a0515b22b03444e171503d8a1a39d27158437e28
