@@ -1,4 +1,3 @@
-
 # get the working directory
 PWD=$(pwd;);
 #echo $PWD;
