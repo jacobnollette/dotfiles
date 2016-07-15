@@ -9,9 +9,9 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build;
 cat $PWD/partials/bashrc >> ~/.bashrc;
 cat $PWD/partials/bashrc >> ~/.zshrc;
 
-#source $HOME/.zshrc;
+source $HOME/.zshrc;
 
-
+#echo $PWD;
 exec $PWD/partials/ruby_install.sh;
 #echo $SHELL;
 #exec $SHELL;
