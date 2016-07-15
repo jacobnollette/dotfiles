@@ -1,0 +1,64 @@
+server {
+	#listen 80;
+	#listen [::]:80;
+
+	listen 443 ssl;
+	listen [::]:443 ssl;
+
+    ssl_certificate /etc/letsencrypt/live/www.jacobnollette.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/www.jacobnollette.com/privkey.pem;
+
+
+
+	root /srv/www/jacobnollette_com-www/current;
+
+	index index.php;
+
+	# Make site accessible from http://localhost/
+	server_name www.jacobnollette.com;
+	
+
+	location / {
+                # try_files $uri $uri/ =404;
+                try_files $uri $uri/ /index.php?q=$uri&$args;
+        }
+
+        error_page 404 /404.html;
+
+        error_page 500 502 503 504 /50x.html;
+        location = /50x.html {
+                root /usr/share/nginx/html;
+        }
+
+        location ~ \.php$ {
+                try_files $uri =404;
+                fastcgi_split_path_info ^(.+\.php)(/.+)$;
+                fastcgi_pass unix:/var/run/php5-fpm.sock;
+                fastcgi_index index.php;
+                include fastcgi_params;
+        }
+
+		location = /xmlrpc.php {
+			deny all;
+			access_log off;
+			error_log off;
+			log_not_found off;
+		}
+	
+
+
+}
+
+
+server {
+	listen 80;
+	listen [::]:80;
+	
+	server_name jacobnollette.com;
+	location / {
+		rewrite ^.* https://www.jacobnollette.com;
+	}
+
+}
+
+
