@@ -1,7 +1,6 @@
 #  install local files, 
 #  read to update gitconfig
 
-cd ../../;
 PWD=$(pwd;);
 
 cat $PWD/vim/vimrc.symlink > ~/.vimrc;
