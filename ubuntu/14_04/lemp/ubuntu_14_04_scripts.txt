@@ -1,0 +1,7 @@
+git@github.com:jnollette/ubuntu_14_scripts.git
+
+
+
+cron for certbot, @ 3:30am
+30  3   *   *   *   /root/Enviroment/ubuntu_14_scripts/certbotRenewal.sh
+
