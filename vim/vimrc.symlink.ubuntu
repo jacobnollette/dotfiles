@@ -49,3 +49,6 @@ if has("gui_running")
 	colorscheme ron
 	set guifont=Inconsolata\ for\ Powerline:h18
 endif
+
+
+set clipboard=unnamed
