@@ -1,2 +1,2 @@
 sudo apt-get update; sudo apt-get upgrade;
-sudo apt-get install wget htop zip unzip git;
+sudo apt-get install wget htop zip unzip git vim tmux xclip;

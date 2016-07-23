@@ -2,3 +2,11 @@ host shortcut
   user jnollette
   hostname bossmachine.local
   #port 3333
+
+
+Host proxyshortcut
+  ProxyCommand          nc -X 5 -x 127.0.0.1:9050 %h %p
+  ServerAliveInterval   10  
+  hostname hostname.local
+  user jnollette
+  port 3333
