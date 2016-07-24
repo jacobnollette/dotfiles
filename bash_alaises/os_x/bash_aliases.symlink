@@ -10,6 +10,8 @@ alias gu='git push';
 alias gup="git push";
 alias gdown="git pull";
 
+alias guom="git push origin master";
+alias gdom="git pull origin master";
 
 # finder
 alias show_dots='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder';
@@ -24,8 +26,6 @@ alias wifi_on="networksetup -setairportpower en0 on";
 alias wifi_list="airport -s";
 alias wifi_join="networksetup -setairportnetwork en0"
 
-alias bonjouroff="sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist";
-alias bonjouron="sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist";
 
 
 
@@ -81,3 +81,4 @@ alias nowdate='date +"%d-%m-%Y"';
 alias ports_i4="lsof -n -i4";
 alias ports_i6="lsof -n -i6";
 
+#!/bin/bash

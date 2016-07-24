@@ -1,7 +1,9 @@
+
+pwd=$(pwd);
+
 cd os_x;
-. build.sh;
-
+. $pwd/os_x/build.sh;
 cd ../ubuntu;
-. build.sh;
-
+. $pwd/ubuntu/build.sh;
+cd ..;
 zsh;
