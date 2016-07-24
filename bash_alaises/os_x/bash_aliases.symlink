@@ -18,7 +18,32 @@ alias apacherestart='sudo apachectl restart';
 alias sshrestart='sudo launchctl unload /System/Library/LaunchDaemons/ssh.plist; sudo launchctl load /System/Library/LaunchDaemons/ssh.plist;';
 alias vpnrestart='sudo serveradmin stop vpn; sudo serveradmin start vpn;';
 # general shell
-alias sshp='ssh -o PubkeyAuthentication=no'
-alias crone='EDITOR=nano crontab -e'
-alias clearexit='cat /dev/null > ~/.bash_history && history -c && exit'
+alias sshp='ssh -o PubkeyAuthentication=no';
+alias crone='EDITOR=nano crontab -e';
+alias clearexit='cat /dev/null > ~/.bash_history && history -c && exit';
+alias c="clear";
+alias reboot="sudo reboot;";
+
+
+# file
+alias ..="cd ..";
+alias ...="cd ../../../";
+alias ....="cd ../../../../";
+alias .....="cd ../../../../../";
+
+
+# editor
+alias edit="vim";
+
+alias log="cd /var/log";
+alias root="su root;";
+
+# date
+alias now='date +"%T"';
+alias nowtime=now;
+alias nowdate='date +"%d-%m-%Y"';
+
+# network
+alias ports_i4="lsof -n -i4";
+alias ports_i6="lsof -n -i6";
 
