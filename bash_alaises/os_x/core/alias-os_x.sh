@@ -11,8 +11,6 @@ alias wifi_on="networksetup -setairportpower en0 on";
 alias wifi_list="airport -s";
 alias wifi_join="networksetup -setairportnetwork en0"
 
-alias bonjour_off="sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist; sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSResponderHelper.plist";
-alias bonjour_on="sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist; sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSResponderHelper.plist";
 
 
 
