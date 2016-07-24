@@ -1,11 +1,3 @@
-#!/bin/bash
-#  Git aliases
-
-alias ga='git add -A';
-alias gc='git commit -m';
-alias gs='git status';
-alias gd='git pull';
-alias gu='git push';
 # finder
 alias show_dots='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder';
 alias hide_dots='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder';
@@ -46,33 +38,3 @@ alias dnsstop="sudo serveradmin stop dns;";
 alias dhcprestart="sudo serveradmin stop dhcp; sudo serveradmin start dhcp;";
 alias dhcpstart="sudo serveradmin start dhcp;";
 alias dhcpstop="sudo serveradmin stop dhcp;";
-# general shell
-alias sshp='ssh -o PubkeyAuthentication=no';
-alias crone='EDITOR=nano crontab -e';
-alias clearexit='cat /dev/null > ~/.bash_history && history -c && exit';
-alias c="clear";
-alias reboot="sudo reboot;";
-
-
-# file
-alias ..="cd ..";
-alias ...="cd ../../../";
-alias ....="cd ../../../../";
-alias .....="cd ../../../../../";
-
-
-# editor
-alias edit="vim";
-
-alias log="cd /var/log";
-alias root="su root;";
-
-# date
-alias now='date +"%T"';
-alias nowtime=now;
-alias nowdate='date +"%d-%m-%Y"';
-
-# network
-alias ports_i4="lsof -n -i4";
-alias ports_i6="lsof -n -i6";
-

@@ -3,3 +3,5 @@ cd os_x;
 
 cd ../ubuntu;
 . build.sh;
+
+zsh;
