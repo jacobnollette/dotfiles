@@ -1,16 +1,3 @@
-#!/bin/bash
-#  Git aliases
-
-alias ga='git add -A';
-alias gc='git commit -m';
-alias gs='git status';
-
-alias gd='git pull';
-alias gu='git push';
-alias gup="git push";
-alias gdown="git pull";
-
-
 # general shell
 alias sshp='ssh -o PubkeyAuthentication=no';
 alias crone='EDITOR=nano crontab -e';
