@@ -18,7 +18,9 @@ alias gl="git log";
 alias gum="git branch -u origin/master";
 
 
-alias gb="git rebase -i HEAD~10";
+alias gb="git rebase -i";
+alias gb5="git rebase -i HEAD~5";
+alias gb10="git rebase -i HEAD~10";
 alias gb20="git rebase -i HEAD~20";
 alias gbc="git rebase --continue";
 alias gbs="git rebase --skip";
@@ -53,6 +55,9 @@ alias nowdate='date +"%d-%m-%Y"';
 alias ports_i4="lsof -n -i4";
 alias ports_i6="lsof -n -i6";
 
+
+# processes
+alias htopu="htop -u $(whoami)";
 #network
 
 #alias wifi_info="iwconfig;";

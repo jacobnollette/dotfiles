@@ -28,3 +28,6 @@ alias nowdate='date +"%d-%m-%Y"';
 alias ports_i4="lsof -n -i4";
 alias ports_i6="lsof -n -i6";
 
+
+# processes
+alias htopu="htop -u $(whoami)";
