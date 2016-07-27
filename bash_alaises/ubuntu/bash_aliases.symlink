@@ -43,3 +43,7 @@ alias nowdate='date +"%d-%m-%Y"';
 alias ports_i4="lsof -n -i4";
 alias ports_i6="lsof -n -i6";
 
+#network
+
+alias wifi_info="iwconfig;";
+alias wifi_scan="iwlist wlan0 scan;";
