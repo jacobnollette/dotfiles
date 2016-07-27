@@ -46,4 +46,4 @@ alias ports_i6="lsof -n -i6";
 #network
 
 alias wifi_info="iwconfig;";
-alias wifi_scan="iwlist wlan0 scan;";
+#alias wifi_scan="iwlist wlan0 scan;";
