@@ -9,4 +9,6 @@ alias gu='git push';
 alias gup="git push";
 alias gdown="git pull";
 
+alias guom="git push origin master";
+alias gdom="git pull origin master";
 
