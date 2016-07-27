@@ -12,3 +12,4 @@ alias gdown="git pull";
 alias guom="git push origin master";
 alias gdom="git pull origin master";
 
+alias gum="git branch -u origin/master";

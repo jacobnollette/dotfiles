@@ -13,6 +13,7 @@ alias gdown="git pull";
 alias guom="git push origin master";
 alias gdom="git pull origin master";
 
+alias gum="git branch -u origin/master";
 # finder
 alias show_dots='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder';
 alias hide_dots='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder';
