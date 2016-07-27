@@ -13,6 +13,10 @@ alias gdown="git pull";
 alias guom="git push origin master";
 alias gdom="git pull origin master";
 
+alias gum="git branch -u origin/master";
+
+
+alias gb="git rebase -i HEAD~10";
 # general shell
 alias sshp='ssh -o PubkeyAuthentication=no';
 alias crone='EDITOR=nano crontab -e';
@@ -43,3 +47,7 @@ alias nowdate='date +"%d-%m-%Y"';
 alias ports_i4="lsof -n -i4";
 alias ports_i6="lsof -n -i6";
 
+#network
+
+#alias wifi_info="iwconfig;";
+#alias wifi_scan="iwlist wlan0 scan;";
