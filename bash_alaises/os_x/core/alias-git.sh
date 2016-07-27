@@ -16,3 +16,6 @@ alias gum="git branch -u origin/master";
 
 
 alias gb="git rebase -i HEAD~10";
+alias gb20="git rebase -i HEAD~20";
+alias gbc="git rebase --continue";
+alias gbs="git rebase --skip";
