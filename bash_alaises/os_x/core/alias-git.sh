@@ -17,10 +17,13 @@ alias gl="git log";
 alias gum="git branch -u origin/master";
 
 
-alias gb="git rebase -i";
-alias gb5="git rebase -i HEAD~5";
-alias gb10="git rebase -i HEAD~10";
-alias gb20="git rebase -i HEAD~20";
-alias gbc="git rebase --continue";
-alias gbs="git rebase --skip";
-alias gba="git rebase --abort";
+alias gbase="git rebase -i";
+alias gbase5="git rebase -i HEAD~5";
+alias gbase10="git rebase -i HEAD~10";
+alias gbase20="git rebase -i HEAD~20";
+alias gbasec="git rebase --continue";
+alias gbases="git rebase --skip";
+alias gbasea="git rebase --abort";
+
+alias gb="git branch";
+alias gbr="git branch -r";
