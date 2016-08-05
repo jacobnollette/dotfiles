@@ -1,1 +1,0 @@
-../../os_x/core/alias-shell.sh

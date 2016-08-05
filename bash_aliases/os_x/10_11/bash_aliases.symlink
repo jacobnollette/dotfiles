@@ -34,8 +34,8 @@ alias show_dots='defaults write com.apple.finder AppleShowAllFiles TRUE && killa
 alias hide_dots='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder';
 
 
-alias blue_off='blueutil power 0';
-alias blue_on='blueutil power 1';
+#alias blue_off='blueutil power 0';
+#alias blue_on='blueutil power 1';
 
 alias wifi_off="networksetup -setairportpower en0 off";
 alias wifi_on="networksetup -setairportpower en0 on";

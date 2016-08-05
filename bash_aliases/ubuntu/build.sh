@@ -1,1 +1,0 @@
-../os_x/build.sh
