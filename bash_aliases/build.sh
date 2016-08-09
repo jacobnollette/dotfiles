@@ -1,9 +1,11 @@
+#pwd=$(pwd);
 
-pwd=$(pwd);
+cd ~/.dotfiles/bash_aliases;
 
-cd os_x;
-. $pwd/os_x/build.sh;
-cd ../ubuntu;
-. $pwd/ubuntu/build.sh;
-cd ..;
+. os_x/10_11/build.sh;
+
+. ubuntu/14_04/build.sh;
+. ubuntu/16_04/build.sh;
+
+#cd ..;
 zsh;

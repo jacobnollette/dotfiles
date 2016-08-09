@@ -1,11 +1,21 @@
-# finder
+
+
+
+#		finder / file system
 alias show_dots='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder';
 alias hide_dots='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder';
 
+alias image_open="hdiutil attach -stdinpass";
 
+
+
+#		bluetooth networking
 #alias blue_off='blueutil power 0';
 #alias blue_on='blueutil power 1';
 
+
+
+#		wifi networking
 alias wifi_off="networksetup -setairportpower en0 off";
 alias wifi_on="networksetup -setairportpower en0 on";
 alias wifi_list="sudo airport -s";
@@ -14,17 +24,13 @@ alias wifi_sniff="sudo airport sniff 1";
 
 
 
-
-
+#		system services
 alias dnsflush='sudo killall -HUP mDNSResponder';
 alias apacherestart='sudo apachectl restart';
-alias sshrestart='sudo launchctl unload /System/Library/LaunchDaemons/ssh.plist; sudo launchctl load /System/Library/LaunchDaemons/ssh.plist;';
 
 
 
-
-
-# server services
+#		server services
 alias vpnrestart='sudo serveradmin stop vpn; sudo serveradmin start vpn;';
 alias vpnstart="sudo serveradmin start vpn;";
 alias vpnstop="sudo serveradmin stop vpn;";
@@ -36,3 +42,6 @@ alias dnsstop="sudo serveradmin stop dns;";
 alias dhcprestart="sudo serveradmin stop dhcp; sudo serveradmin start dhcp;";
 alias dhcpstart="sudo serveradmin start dhcp;";
 alias dhcpstop="sudo serveradmin stop dhcp;";
+
+
+
