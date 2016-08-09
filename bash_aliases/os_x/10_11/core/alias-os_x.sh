@@ -36,3 +36,11 @@ alias dnsstop="sudo serveradmin stop dns;";
 alias dhcprestart="sudo serveradmin stop dhcp; sudo serveradmin start dhcp;";
 alias dhcpstart="sudo serveradmin start dhcp;";
 alias dhcpstop="sudo serveradmin stop dhcp;";
+
+
+
+#   hdiutil
+alias image_open="hdiutil attach -stdinpass";
+
+
+

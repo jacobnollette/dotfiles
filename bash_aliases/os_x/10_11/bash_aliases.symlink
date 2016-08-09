@@ -67,6 +67,14 @@ alias dnsstop="sudo serveradmin stop dns;";
 alias dhcprestart="sudo serveradmin stop dhcp; sudo serveradmin start dhcp;";
 alias dhcpstart="sudo serveradmin start dhcp;";
 alias dhcpstop="sudo serveradmin stop dhcp;";
+
+
+
+#   hdiutil
+alias image_open="hdiutil attach -stdinpass";
+
+
+
 # general shell
 alias sshp='ssh -o PubkeyAuthentication=no';
 alias crone='EDITOR=nano crontab -e';
