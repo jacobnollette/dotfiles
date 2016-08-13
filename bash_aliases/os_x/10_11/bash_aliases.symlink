@@ -4,7 +4,8 @@
 
 
 alias ga='git add -A';
-alias gc='git commit -m';
+#alias gc='git commit -m';
+alias gc="git commit";
 alias gs='git status';
 
 
@@ -89,6 +90,11 @@ alias dnsstop="sudo serveradmin stop dns;";
 alias dhcprestart="sudo serveradmin stop dhcp; sudo serveradmin start dhcp;";
 alias dhcpstart="sudo serveradmin start dhcp;";
 alias dhcpstop="sudo serveradmin stop dhcp;";
+
+
+
+#   hdiutil
+alias image_open="hdiutil attach -stdinpass";
 
 
 

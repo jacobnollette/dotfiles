@@ -3,7 +3,8 @@
 
 
 alias ga='git add -A';
-alias gc='git commit -m';
+#alias gc='git commit -m';
+alias gc="git commit";
 alias gs='git status';
 
 

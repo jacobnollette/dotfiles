@@ -45,3 +45,8 @@ alias dhcpstop="sudo serveradmin stop dhcp;";
 
 
 
+#   hdiutil
+alias image_open="hdiutil attach -stdinpass";
+
+
+
