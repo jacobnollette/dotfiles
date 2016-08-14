@@ -10,24 +10,25 @@ alias gu='git push';
 alias gup="git push";
 alias gdown="git pull";
 
-alias guom="git push origin master";
-alias gdom="git pull origin master";
+alias gpush_om="git push origin master";
+alias gpull_om="git pull origin master";
 
 alias gl="git log";
+alias glog="git log";
 
 alias gum="git branch -u origin/master";
 
 
-alias gbase="git rebase -i";
-alias gbase5="git rebase -i HEAD~5";
-alias gbase10="git rebase -i HEAD~10";
-alias gbase20="git rebase -i HEAD~20";
-alias gbasec="git rebase --continue";
-alias gbases="git rebase --skip";
-alias gbasea="git rebase --abort";
+alias grebase="git rebase -i";
+alias grebase_55="git rebase -i HEAD~5";
+alias grebase_10="git rebase -i HEAD~10";
+alias grebase_20="git rebase -i HEAD~20";
+alias grebase_continue="git rebase --continue";
+alias grebase_skip="git rebase --skip";
+alias grebase_abort="git rebase --abort";
 
-alias gb="git branch";
-alias gbr="git branch -r";
+alias gbranch="git branch";
+alias gbranch_r="git branch -r";
 # general shell
 alias sshp='ssh -o PubkeyAuthentication=no';
 alias crone='EDITOR=nano crontab -e';
