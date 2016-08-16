@@ -5,7 +5,11 @@
 alias show_dots='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder';
 alias hide_dots='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder';
 
+
+
+#   hd utils
 alias image_open="hdiutil attach -stdinpass";
+alias secure_erase="srm -rfv -s";
 
 
 
@@ -45,8 +49,6 @@ alias dhcpstop="sudo serveradmin stop dhcp;";
 
 
 
-#   hdiutil
-alias image_open="hdiutil attach -stdinpass";
 
 
 
