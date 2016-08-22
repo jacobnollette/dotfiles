@@ -1,0 +1,2 @@
+modprobe zfs;
+lsmod | grep zfs;
