@@ -33,6 +33,11 @@ alias dnsflush='sudo killall -HUP mDNSResponder';
 alias apacherestart='sudo apachectl restart';
 
 
+alias ssh_stop="sudo launchctl stop com.openssh.sshd";
+alias ssh_start="sudo launchctl start com.openssh.sshd";
+alias ssh_restart="sudo launchctl stop com.openssh.sshd; sudo launchctl start com.openssh.sshd;";
+
+
 
 #		server services
 alias vpnrestart='sudo serveradmin stop vpn; sudo serveradmin start vpn;';
