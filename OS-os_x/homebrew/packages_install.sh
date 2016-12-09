@@ -4,5 +4,6 @@ brew install iftop;
 brew install irssi;
 brew install nmap;
 brew install tmux;
+brew install reattach-to-user-namespace;
 brew install tor;
 brew install wget;
