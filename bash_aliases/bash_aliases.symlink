@@ -89,4 +89,5 @@ alias ports_i6="lsof -n -i6";
 alias htopu="htop -u $(whoami)";
 
 
-
+#	whats my ip
+alias whatip="wget -qO- http://ipecho.net/plain ; echo;";
