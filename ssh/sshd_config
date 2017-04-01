@@ -26,6 +26,7 @@ LogLevel INFO
 # Authentication:
 LoginGraceTime 120
 PermitRootLogin no
+#AllowUsers root@10.0.1.*
 StrictModes yes
 
 RSAAuthentication yes
