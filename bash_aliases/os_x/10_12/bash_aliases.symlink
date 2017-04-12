@@ -70,6 +70,7 @@ alias secure_erase="srm -rfv -s";
 #		wifi networking
 alias wifi_off="networksetup -setairportpower en0 off";
 alias wifi_on="networksetup -setairportpower en0 on";
+alias wifi_restart="wifi_off; wifi_on;";
 alias wifi_list="sudo airport -s";
 alias wifi_join="networksetup -setairportnetwork en0"
 alias wifi_sniff="sudo airport sniff 1";
