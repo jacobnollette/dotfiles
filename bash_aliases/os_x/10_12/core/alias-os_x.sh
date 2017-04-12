@@ -38,6 +38,9 @@ alias ssh_stop="sudo launchctl stop com.openssh.sshd";
 alias ssh_start="sudo launchctl start com.openssh.sshd";
 alias ssh_restart="sudo launchctl stop com.openssh.sshd; sudo launchctl start com.openssh.sshd;";
 
+alias tor_start="launchctl load /usr/local/opt/tor/homebrew.mxcl.tor.plist";
+alias tor_stop="launchctl unload /usr/local/opt/tor/homebrew.mxcl.tor.plist";
+alias tor_restart="tor_stop; tor_start; tail -f /usr/local/var/log/tor.log;"
 
 
 #		server services
