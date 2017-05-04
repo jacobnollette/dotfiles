@@ -1,4 +1,5 @@
-gem install rails -v 4.2.6;
+#gem install rails -v 5.1.0
+gem install rails -v 5.0.1
 rails -v;
 
 
