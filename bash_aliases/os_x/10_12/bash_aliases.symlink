@@ -61,6 +61,7 @@ alias secure_erase="srm -rfv -s";
 
 
 alias nuke_webcam="sudo killall VDCAssistant";
+alias webcam_nuke="sudo killall VDCAssistant";
 
 
 #		bluetooth networking
