@@ -12,6 +12,9 @@ alias image_open="hdiutil attach -stdinpass";
 alias secure_erase="srm -rfv -s";
 
 
+alias nuke_webcam="sudo killall VDCAssistant";
+alias webcam_nuke="sudo killall VDCAssistant";
+
 
 #		bluetooth networking
 #alias blue_off='blueutil power 0';
