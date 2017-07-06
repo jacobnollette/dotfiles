@@ -21,12 +21,13 @@ set incsearch	" Searches for strings incrementally
 ""  TABS and INDENTATION 
 set autoindent	" Auto-indent new lines
 "set shiftwidth=4	" Number of auto-indent spaces
+set noexpandtab
 set smartindent	" Enable smart-indent
 "set smarttab	" Enable smart-tabs
 "set softtabstop=4	" Number of spaces per Tab
-set tabstop=2
+set tabstop=4
 set copyindent
-set shiftwidth=2
+set shiftwidth=4
 ""set expandtab
 set clipboard=unnamed
 
