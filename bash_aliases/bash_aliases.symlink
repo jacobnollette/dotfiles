@@ -1,10 +1,18 @@
 #!/bin/bash
+tar_zip () {
+    tar -zcvf $1 $2;
+}
+
+tar_unzip () {
+	tar -xvf $1;
+}
 #  Git aliases
 
 
 
 alias ga='git add -A';
-alias gc='git commit -m';
+#alias gc='git commit -m';
+alias gc="git commit";
 alias gs='git status';
 
 
@@ -89,5 +97,4 @@ alias ports_i6="lsof -n -i6";
 alias htopu="htop -u $(whoami)";
 
 
-#	whats my ip
-alias whatip="wget -qO- http://ipecho.net/plain ; echo;";
+

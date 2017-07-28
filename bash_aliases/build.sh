@@ -1,6 +1,6 @@
 #pwd=$(pwd);
 
-cd ~/.dotfiles/bash_aliases;
+cd ~/Enviroment/dotfiles/bash_aliases;
 
 . os_x/10_11/build.sh;
 
