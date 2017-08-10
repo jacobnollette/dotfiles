@@ -98,3 +98,6 @@ alias htopu="htop -u $(whoami)";
 
 
 
+tar_md5 () {
+	tar -cf - $1 | md5
+}
