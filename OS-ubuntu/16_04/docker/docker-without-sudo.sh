@@ -1,4 +1,4 @@
-sudo usermod -aG docker ${USER}
-su - ${USER}
+sudo usermod -aG docker $1
+su - $1
 
 
