@@ -53,6 +53,12 @@ alias gbranch_r="git branch -r";
 
 
 
+function env_push () {
+	git push lab $1;
+	git push project $1;
+	git push staff $1;
+}
+
 # general shell
 alias sshp='ssh -o PubkeyAuthentication=no';
 alias crone='EDITOR=nano crontab -e';
