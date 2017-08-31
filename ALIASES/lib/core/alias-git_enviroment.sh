@@ -1,42 +1,60 @@
+function git_get_branch () {
+	if [ -z "$1"]; then
+		_the_branch=`git branch | grep \* | cut -d ' ' -f2-`;
+	else
+		_the_branch=$1;
+	fi
+	echo $_the_branch;
+}
 function env_push () {
-	git push tower $1;
-	git push project $1;
-	git push staff $1;
+	_the_branch=git_get_branch $1;
+	git push tower $_the_branch;
+	git push project $_the_branch;
+	git push staff $_the_branch;
 }
 
 function tower_push () {
-	git push tower $1;
+	_the_branch=git_get_branch $1;
+	git push tower $_the_branch;
 }
 
 function tower_pull () {
-	git pull tower $1;
+	_the_branch=git_get_branch $1;
+	git pull tower $_the_branch;
 }
 
 function github_push () {
-	git push github $1;
+	_the_branch=git_get_branch $1;
+	git push github $_the_branch;
 }
 
 function github_pull () {
-	git pull github $1;
+	_the_branch=git_get_branch $1;
+	git pull github $_the_branch;
 }
 
 function project_push () {
-	git push project $1;
+	_the_branch=git_get_branch $1;
+	git push project $_the_branch;
 }
 
 function project_pull () {
-	git pull project $1;
+	_the_branch=git_get_branch $1;
+	git pull project $_the_branch;
 }
 
 function staff_push () {
-	git push staff $1;
+	_the_branch=git_get_branch $1;
+	git push staff $_the_branch;
 }
 
 function staff_pull () {
-	git pull staff $1;
+	_the_branch=git_get_branch $1;
+	git pull staff $_the_branch;
 }
 
 function nas_push () {
-	staff_push $1;
-	project_push $1;
+	_the_branch=git_get_branch $1;
+	staff_push $_the_branch;
+	project_push $_the_branch;
 }
