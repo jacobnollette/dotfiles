@@ -1,6 +1,7 @@
 function git_get_branch () {
 	if [ -z "$1"]; then
-		_the_branch=`git branch | grep \* | cut -d ' ' -f2-`;
+		#_the_branch=`git branch | grep \* | cut -d ' ' -f2-`;
+		_the_branch=`git rev-parse --abbrev-ref HEAD`;
 	else
 		_the_branch=$1;
 	fi
