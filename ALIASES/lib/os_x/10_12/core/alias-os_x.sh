@@ -21,7 +21,8 @@ alias webcam_nuke="sudo killall VDCAssistant";
 #alias blue_on='blueutil power 1';
 
 
-
+#		networking
+alias wifi_flush="sudo route -n flush; sudo route -n flush; sudo route -n flush; wifi_restart;";
 #		wifi networking
 alias wifi_off="networksetup -setairportpower en0 off";
 alias wifi_on="networksetup -setairportpower en0 on";
