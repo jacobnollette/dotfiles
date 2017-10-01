@@ -1,3 +1,4 @@
+sudo apt-get -y install cifs-util tmux vim iotop iftop htop openvpn
 sudo apt-get -y install autoconf automake build-essential libass-dev libfreetype6-dev libtheora-dev libtool libvorbis-dev pkg-config texinfo zlib1g-dev 
 sudo apt-get install -y libfdk-aac-dev
 sudo apt-get install -y libmp3lame-dev
