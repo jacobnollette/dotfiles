@@ -51,7 +51,7 @@ alias gbranch_r="git branch -r";
 
 #		nginx restart
 alias nginx_start='sudo nginx;';
-alias nginx_stop='sudo nginx -f stop;';
+alias nginx_stop='sudo nginx -s stop;';
 alias nginx_restart='nginx_stop; nginx_start;';
 
 
@@ -170,3 +170,7 @@ tar_md5 () {
 	#	https://unix.stackexchange.com/questions/35832/how-do-i-get-the-md5-sum-of-a-directorys-contents-as-one-sum
 	tar -cf - $1 | md5
 }
+#!/bin/bash
+
+
+
