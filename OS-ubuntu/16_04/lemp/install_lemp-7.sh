@@ -1,7 +1,7 @@
 sudo apt-get update; sudo apt-get upgrade;
 #sudo apt-get isntall tmux zip unzip wget;
 
-sudo apt-get install \
+sudo apt-get install -y \
 	nginx \
 	php7.0-fpm php7.0-cli php7.0-dev \
 	php7.0-mysql php7.0-sqlite php7.0-pgsql \
