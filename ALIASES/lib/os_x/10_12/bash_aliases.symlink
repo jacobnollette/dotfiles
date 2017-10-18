@@ -64,7 +64,8 @@ alias hide_dots='defaults write com.apple.finder AppleShowAllFiles FALSE && kill
 
 #   hd utils
 alias image_open="hdiutil attach -stdinpass";
-alias secure_erase="srm -rfv -s";
+alias secure_erase="rm -P";
+alias shred="secure_erase";
 
 
 alias nuke_webcam="sudo killall VDCAssistant";
