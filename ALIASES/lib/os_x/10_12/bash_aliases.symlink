@@ -49,6 +49,13 @@ alias gbranch_r="git branch -r";
 
 
 
+#		nginx restart
+alias nginx_start='sudo nginx;';
+alias nginx_stop='sudo nginx -s stop;';
+alias nginx_restart='nginx_stop; nginx_start;';
+
+
+
 #		finder / file system
 alias show_dots='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder';
 alias hide_dots='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder';
