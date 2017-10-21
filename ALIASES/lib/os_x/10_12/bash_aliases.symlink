@@ -64,7 +64,8 @@ alias hide_dots='defaults write com.apple.finder AppleShowAllFiles FALSE && kill
 
 #   hd utils
 alias image_open="hdiutil attach -stdinpass";
-alias secure_erase="srm -rfv -s";
+alias secure_erase="rm -P";
+alias shred="secure_erase";
 
 
 alias nuke_webcam="sudo killall VDCAssistant";
@@ -89,8 +90,8 @@ alias wifi_sniff="sudo airport sniff 1";
 
 
 #		system services
-alias dnsflush='sudo killall -HUP mDNSResponder';
-alias apacherestart='sudo apachectl restart';
+alias dns_flush='sudo killall -HUP mDNSResponder';
+alias apache_restart='sudo apachectl restart';
 
 
 alias ssh_stop="sudo launchctl stop com.openssh.sshd";
@@ -103,17 +104,17 @@ alias tor_restart="tor_stop; tor_start; tail -f /usr/local/var/log/tor.log;"
 
 
 #		server services
-alias vpnrestart='sudo serveradmin stop vpn; sudo serveradmin start vpn;';
-alias vpnstart="sudo serveradmin start vpn;";
-alias vpnstop="sudo serveradmin stop vpn;";
+alias vpn_restart='sudo serveradmin stop vpn; sudo serveradmin start vpn;';
+alias vpn_start="sudo serveradmin start vpn;";
+alias vpn_stop="sudo serveradmin stop vpn;";
 
-alias dnsrestart="sudo serveradmin stop dns; sudo serveradmin start dns;"
-alias dnsstart="sudo serveradmin start dns;";
-alias dnsstop="sudo serveradmin stop dns;";
+alias dns_restart="sudo serveradmin stop dns; sudo serveradmin start dns;"
+alias dns_start="sudo serveradmin start dns;";
+alias dns_stop="sudo serveradmin stop dns;";
 
-alias dhcprestart="sudo serveradmin stop dhcp; sudo serveradmin start dhcp;";
-alias dhcpstart="sudo serveradmin start dhcp;";
-alias dhcpstop="sudo serveradmin stop dhcp;";
+alias dhcp_restart="sudo serveradmin stop dhcp; sudo serveradmin start dhcp;";
+alias dhcp_start="sudo serveradmin start dhcp;";
+alias dhcp_stop="sudo serveradmin stop dhcp;";
 
 
 
