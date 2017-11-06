@@ -42,4 +42,4 @@ alias ports_i6="lsof -n -i6";
 alias htopu="htop -u $(whoami)";
 
 
-
+alias ip_external="curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'";
