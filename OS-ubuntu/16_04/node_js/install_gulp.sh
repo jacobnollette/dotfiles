@@ -1,1 +1,1 @@
-npm -g install gulp;
+sudo npm -g install gulp;
