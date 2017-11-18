@@ -65,4 +65,6 @@ alias dhcp_stop="sudo serveradmin stop dhcp;";
 
 
 
-
+alias screensharing_off="sudo launchctl unload /System/Library/LaunchDaemons/com.apple.screensharing.plist;";
+alias screensharing_on="sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.screensharing.plist;";
+alias screensharing_restart="screensharing_off; screensharing_on;";

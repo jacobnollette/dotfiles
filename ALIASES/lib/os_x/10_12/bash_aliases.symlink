@@ -120,6 +120,10 @@ alias dhcp_stop="sudo serveradmin stop dhcp;";
 
 
 
+alias screensharing_off="sudo launchctl unload /System/Library/LaunchDaemons/com.apple.screensharing.plist;";
+alias screensharing_on="sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.screensharing.plist;";
+alias screensharing_restart="screensharing_off; screensharing_on;";
+#alias composer="php /usr/local/bin/composer.phar"
 
 # general shell
 alias sshp='ssh -o PubkeyAuthentication=no';
@@ -165,7 +169,7 @@ alias ports_i6="lsof -n -i6";
 alias htopu="htop -u $(whoami)";
 
 
-
+alias ip_external="curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'";
 tar_md5 () {
 	#	md5 check sum a directory
 	#	https://unix.stackexchange.com/questions/35832/how-do-i-get-the-md5-sum-of-a-directorys-contents-as-one-sum
