@@ -54,6 +54,11 @@ alias nginx_start='sudo nginx;';
 alias nginx_stop='sudo nginx -s stop;';
 alias nginx_restart='nginx_stop; nginx_start;';
 
+cool_view() {
+	the_cols=$(tput cols);
+
+	cat $1 | cowsay -W $the_cols | lolcat;
+}
 
 
 #		finder / file system

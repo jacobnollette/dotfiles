@@ -1,4 +1,9 @@
 
+cool_view() {
+	the_cols=$(tput cols);
+
+	cat $1 | cowsay -W $the_cols | lolcat;
+}
 
 
 #		finder / file system
