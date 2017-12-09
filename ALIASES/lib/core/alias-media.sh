@@ -14,17 +14,17 @@ function dot_clean () {
 
 
 function split_dvd_single () {
-	split -b 4400M "$@";
+	split -b 4400m "$@";
 }
 
 function split_dvd_dual () {
-	split -b 8100M "$@";
+	split -b 8100m "$@";
 }
 
 function split_bluray_single () {
-	split -b 23000M "$@";
+	split -b 23000m "$@";
 }
 
 function split_bluray_dual () {
-	split -b 43000M "$@";
+	split -b 43000m "$@";
 }
