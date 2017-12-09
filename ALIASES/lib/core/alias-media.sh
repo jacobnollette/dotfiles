@@ -11,3 +11,20 @@ function dot_clean () {
 	find "$input_folder" -depth -name ".AppleDouble" -exec rm -Rf {} \;
 }
 
+
+
+function split_dvd_single () {
+	split -b 4400M "$@";
+}
+
+function split_dvd_dual () {
+	split -b 8100M "$@";
+}
+
+function split_bluray_single () {
+	split -b 23000M "$@";
+}
+
+function split_bluray_dual () {
+	split -b 43000M "$@";
+}
