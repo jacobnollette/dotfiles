@@ -144,6 +144,13 @@ function split_bluray_single () {
 function split_bluray_dual () {
 	split -b 43000m "$@";
 }
+function nmap_all () {
+	nmap -sS -sU -PN -p 1-65535 "$@";
+}
+
+function nmap_all_input () {
+	nmap -sS -sU -PN -iL -p 1-65535 "$@";
+}
 # general shell
 alias sshp='ssh -o PubkeyAuthentication=no';
 alias crone='EDITOR=nano crontab -e';
