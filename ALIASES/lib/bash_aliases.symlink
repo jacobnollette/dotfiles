@@ -172,3 +172,12 @@ alias htopu="htop -u $(whoami)";
 
 
 alias ip_external="curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'";
+function ssh_new_key () {
+	input_key="$@";
+	ssh-keygen -f $input_key -t rsa -b 4096;
+}
+
+function ssh_home_key () {
+	ssh-keygen -t rsa -b 4096;
+}
+
