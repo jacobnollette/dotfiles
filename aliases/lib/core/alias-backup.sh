@@ -19,7 +19,7 @@ function archive_file () {
 	given_file="$@";
 	mkdir _print;
 	
-	gpg --armor -r "jacob@jacobnollette.com" -f "$given_file";
+	gpg --armor -r "jacob@jacobnollette.com" -e "$given_file";
 	mv "$given_file.asc" _print;
 }
 
