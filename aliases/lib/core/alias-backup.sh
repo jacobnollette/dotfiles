@@ -12,3 +12,15 @@ function archive_folder () {
 	done
 
 }
+
+function archive_file () {
+
+
+	given_file="$@";
+	mkdir _print;
+	
+	pgp --armor -f "jacob@jacobnollette.com" -f "$given_file";
+	mv "$given_file.asc" _print;
+}
+
+
