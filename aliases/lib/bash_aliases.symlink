@@ -1,0 +1,221 @@
+#!/bin/bash
+function archive_folder () {
+	
+	given_folder="$@";
+	print_folder="$given_folder/_print";
+	mkdir -p $print_folder;
+
+	for filename in $given_folder/*.zip; do
+		echo $filename
+
+		gpg --armor -r "jacob@jacobnollette.com" -e $filename;
+		mv "$filename.asc" $print_folder;
+	done
+
+}
+tar_zip () {
+    tar -zcvf $1 $2;
+}
+
+tar_unzip () {
+	tar -xvf $1;
+}
+#  Git aliases
+
+
+
+alias ga='git add -A';
+#alias gc='git commit -m';
+alias gc="git commit";
+alias gs='git status';
+
+
+
+alias gd='git pull';
+alias gu='git push';
+alias gup="git push";
+alias gdown="git pull";
+
+
+
+alias gpush_om="git push origin master";
+alias gpull_om="git pull origin master";
+
+
+
+alias gl="git log";
+alias glog="git log";
+
+
+
+alias gum="git branch -u origin/master";
+
+
+
+alias grebase="git rebase -i";
+alias grebase_55="git rebase -i HEAD~5";
+alias grebase_10="git rebase -i HEAD~10";
+alias grebase_20="git rebase -i HEAD~20";
+alias grebase_continue="git rebase --continue";
+alias grebase_skip="git rebase --skip";
+alias grebase_abort="git rebase --abort";
+
+
+
+alias gbranch="git branch";
+alias gbranch_r="git branch -r";
+
+
+
+function git_get_branch () {
+	if [ -z "$1"]; then
+		#_the_branch=`git branch | grep \* | cut -d ' ' -f2-`;
+		_the_branch=`git rev-parse --abbrev-ref HEAD`;
+	else
+		_the_branch=$1;
+	fi
+	echo $_the_branch;
+}
+function env_push () {
+	_the_branch=`git_get_branch $1`;
+	git push tower $_the_branch;
+	git push project $_the_branch;
+	git push staff $_the_branch;
+}
+
+function tower_push () {
+	_the_branch=`git_get_branch $1`;
+	git push tower $_the_branch;
+}
+
+function tower_pull () {
+	_the_branch=`git_get_branch $1`;
+	git pull tower $_the_branch;
+}
+
+function github_push () {
+	_the_branch=`git_get_branch $1`;
+	git push github $_the_branch;
+}
+
+function github_pull () {
+	_the_branch=`git_get_branch $1`;
+	git pull github $_the_branch;
+}
+
+function project_push () {
+	_the_branch=`git_get_branch $1`;
+	git push project $_the_branch;
+}
+
+function project_pull () {
+	_the_branch=`git_get_branch $1`;
+	git pull project $_the_branch;
+}
+
+function staff_push () {
+	_the_branch=`git_get_branch $1`;
+	git push staff $_the_branch;
+}
+
+function staff_pull () {
+	_the_branch=`git_get_branch $1`;
+	git pull staff $_the_branch;
+}
+
+function nas_push () {
+	_the_branch=`git_get_branch $1`;
+	staff_push $_the_branch;
+	project_push $_the_branch;
+}
+function video_dimension () {
+
+	eval $(ffprobe -v error -of flat=s=_ -select_streams v:0 -show_entries stream=height,width "$@");
+	size=${streams_stream_0_width}x${streams_stream_0_height};
+	echo $size;
+}
+
+function dot_clean () {
+	input_folder="$@";
+	find "$input_folder" -depth -name ".DS_Store" -exec rm {} \;
+	find "$input_folder" -depth -name ".AppleDouble" -exec rm -Rf {} \;
+}
+
+
+
+function split_dvd_single () {
+	split -b 4400m "$@";
+}
+
+function split_dvd_dual () {
+	split -b 8100m "$@";
+}
+
+function split_bluray_single () {
+	split -b 23000m "$@";
+}
+
+function split_bluray_dual () {
+	split -b 43000m "$@";
+}
+function nmap_all () {
+	nmap -sS -sU -PN -p 1-65535 "$@";
+}
+
+function nmap_all_input () {
+	nmap -sS -sU -PN -iL -p 1-65535 "$@";
+}
+# general shell
+alias sshp='ssh -o PubkeyAuthentication=no';
+alias crone='EDITOR=nano crontab -e';
+alias clearexit='cat /dev/null > ~/.bash_history && history -c && exit';
+alias c="clear";
+alias reboot="sudo reboot;";
+
+
+
+# file
+alias ..="cd ..";
+alias ...="cd ../../../";
+alias ....="cd ../../../../";
+alias .....="cd ../../../../../";
+
+
+
+# editor
+alias edit="vim";
+
+
+
+alias log="cd /var/log";
+alias root="su root;";
+
+
+
+# date
+alias now='date +"%T"';
+alias nowtime=now;
+alias nowdate='date +"%d-%m-%Y"';
+
+
+
+# network
+alias ports_i4="lsof -n -i4";
+alias ports_i6="lsof -n -i6";
+
+
+
+# processes
+alias htopu="htop -u $(whoami)";
+
+
+alias ip_external="curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'";
+function ssh_new_key () {
+	input_key="$@";
+	ssh-keygen -f $input_key -t rsa -b 4096;
+}
+
+function ssh_new_home_key () {
+	ssh-keygen -t rsa -b 4096;
+}
+
