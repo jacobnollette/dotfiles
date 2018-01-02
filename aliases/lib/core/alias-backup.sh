@@ -17,7 +17,7 @@ function archive_file () {
 
 
 	given_file="$@";
-	mkdir _print;
+	mkdir -p _print;
 	
 	gpg --armor -r "jacob@jacobnollette.com" -e "$given_file";
 	mv "$given_file.asc" _print;
