@@ -7,10 +7,15 @@ function archive_folder () {
 
 	for filename in $given_folder/*.zip; do
 		echo $filename
-
 		gpg --armor -r "jacob@jacobnollette.com" -e $filename;
 		mv "$filename.asc" $print_folder;
-	done
+	done;
+
+	for filename in $given_folder/*.tar.gz; do
+		echo $filename
+		gpg --armor -r "jacob@jacobnollette.com" -e $filename;
+		mv "$filename.asc" $print_folder;
+	done;
 
 }
 
@@ -22,6 +27,7 @@ function archive_file () {
 	
 	gpg --armor -r "jacob@jacobnollette.com" -e "$given_file";
 	mv "$given_file.asc" _print;
+
 }
 
 
