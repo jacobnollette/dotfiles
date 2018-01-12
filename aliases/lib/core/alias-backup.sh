@@ -29,4 +29,8 @@ function archive_file () {
 
 }
 
-
+function encrypt_file () {
+	given_file="$@";
+	gpg --armor -r "jacob@jacobnollette.com" -e "$given_file";
+	rm -rf $given_file;
+}
