@@ -37,7 +37,7 @@ function archive_folder () {
 	CURRENT=`pwd`
 	given_base=`basename "$CURRENT"`
 	cd "$given_start";
-	given_date=`date '+%Y-%m-%d-%H-%M-%S'`;
+	given_date=`date '+%Y_%m_%d-%H_%M_%S'`;
 	given_file="$given_base-$given_date.tar.gz";
 
 	tar -zcvf "$given_file" "$given_folder";
