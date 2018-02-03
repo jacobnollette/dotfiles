@@ -84,14 +84,3 @@ function encrypt_folder_save () {
 	done;
 
 }
-
-
-
-
-function tar_zip () {
-	    tar -zcvf $1 $2; 
-}
-
-function tar_unzip () {
-	    tar -xvf $1; 
-}
