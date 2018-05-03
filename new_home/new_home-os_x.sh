@@ -3,8 +3,8 @@
 
 PWD=$(pwd;);
 
-cat $PWD/apps/vim/vimrc.symlink.os_x > ~/.vimrc;
-cat $PWD/apps/tmux/tmux.conf.symlink.os_x > ~/.tmux.conf;
-cat $PWD/apps/git/gitconfig.symlink > ~/.gitconfig;
+cat $PWD/../apps/vim/vimrc.symlink.os_x > ~/.vimrc;
+cat $PWD/../apps/tmux/tmux.conf.symlink.os_x > ~/.tmux.conf;
+cat $PWD/../apps/git/gitconfig.symlink > ~/.gitconfig;
 
 vim ~/.gitconfig;
